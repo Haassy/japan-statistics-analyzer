@@ -3,14 +3,6 @@
   "description": "Configure the search criteria to find and extract specific statistical data from the Japanese government's e-Stat portal. Start with a keyword or leave fields blank to explore.",
   "type": "object",
   "schemaVersion": 1,
-  "propertyOrder": [
-    "searchKeyword",
-    "surveyYears",
-    "statsField",
-    "maxItems",
-    "outputFormat",
-    "includeMetadata"
-  ],
   "properties": {
     "searchKeyword": {
       "title": "Search Keyword(s)",
