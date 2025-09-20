@@ -1,0 +1,27 @@
+{
+  "actorSpecification": 1,
+  "name": "japan-statistics-analyzer",
+  "title": "Japan Government Statistics Analyzer",
+  "description": "Your comprehensive gateway to Japan's official government statistics. Extract, normalize, and analyze a vast range of data from the e-Stat API for market research, economic analysis, and academic studies.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "getting_started_node"
+  },
+  "input": "./input_schema.json",
+  "output": "./dataset_schema.json",
+  "dockerfile": "../Dockerfile",
+  "readme": "../README.md",
+  "categories": [
+    "BUSINESS",
+    "DATA_EXTRACTION",
+    "MARKET_RESEARCH",
+    "PUBLIC_DATA"
+  ],
+  "environmentVariables": {
+    "ESTAT_APP_ID": {
+      "name": "e-Stat API Application ID",
+      "description": "Your free Application ID for accessing Japan's e-Stat API. Register at https://www.e-stat.go.jp/api/ to get one.",
+      "isSecret": true
+    }
+  }
+}

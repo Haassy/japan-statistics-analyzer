@@ -1,0 +1,78 @@
+{
+  "title": "Japan Government Statistics Analyzer Input",
+  "description": "Configure the search criteria to find and extract specific statistical data from the Japanese government's e-Stat portal. Start with a keyword or leave fields blank to explore.",
+  "type": "object",
+  "schemaVersion": 1,
+  "propertyOrder": [
+    "searchKeyword",
+    "surveyYears",
+    "statsField",
+    "maxItems",
+    "outputFormat",
+    "includeMetadata"
+  ],
+  "properties": {
+    "searchKeyword": {
+      "title": "Search Keyword(s)",
+      "type": "string",
+      "description": "Enter keywords in Japanese to find relevant statistical tables. For example: \"人口\" (population), \"経済\" (economy), \"労働力調査\" (Labour Force Survey).",
+      "editor": "textfield",
+      "example": "人口"
+    },
+    "surveyYears": {
+      "title": "Survey Year(s)",
+      "type": "string",
+      "description": "Filter data by specific year(s). You can provide a single year (e.g., \"2020\"), a comma-separated list (\"2020,2022\"), or a range (\"2019-2021\").",
+      "editor": "textfield",
+      "example": "2020"
+    },
+    "statsField": {
+      "title": "Statistics Field Code (Advanced)",
+      "type": "string",
+      "description": "For advanced users. A 2 or 4-digit code to filter by a specific statistical field (e.g., \"02\" for Population, \"0301\" for Labor Force).",
+      "editor": "textfield",
+      "example": "02"
+    },
+    "maxItems": {
+      "title": "Maximum Tables to Process",
+      "type": "integer",
+      "description": "The maximum number of statistical tables to find and process. A higher number will result in a longer run time.",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 100
+    },
+    "outputFormat": {
+      "title": "Output Data Format",
+      "type": "string",
+      "description": "Choose the format for the output data. 'Structured' is recommended for most use cases.",
+      "default": "structured",
+      "enum": [
+        "structured",
+        "raw",
+        "both"
+      ],
+      "enumTitles": {
+        "structured": "Structured (Cleaned and Normalized)",
+        "raw": "Raw (Original e-Stat JSON)",
+        "both": "Both Formats"
+      },
+      "editor": "select"
+    },
+    "includeMetadata": {
+      "title": "Include Detailed Metadata",
+      "type": "boolean",
+      "description": "If checked, each data record will include a comprehensive metadata object with details about the data's source and structure.",
+      "default": true
+    }
+  },
+  "required": []
+}
+
+,
+    "delayBetweenRequests": {
+      "title": "Delay Between Requests (ms)",
+      "type": "integer",
+      "description": "The delay in milliseconds between consecutive API requests to avoid rate limiting. Recommended to keep at 1000ms or higher.",
+      "default": 1000,
+      "minimum": 200
+    }

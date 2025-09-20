@@ -1,0 +1,86 @@
+{
+  "title": "Japan Government Statistics Data",
+  "description": "A structured dataset containing statistical data points extracted from the e-Stat portal. Each item represents a single statistical measure with its associated categories and values.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "statName": {
+      "title": "Statistic Name",
+      "type": "string",
+      "description": "The official name of the statistic (e.g., \"国勢調査 人口総数\")."
+    },
+    "surveyDate": {
+      "title": "Survey Date",
+      "type": "string",
+      "description": "The date or period of the survey (e.g., \"2020年\")."
+    },
+    "region": {
+      "title": "Region",
+      "type": "string",
+      "description": "The geographical area the data pertains to (e.g., \"全国\" for 'All Japan')."
+    },
+    "category1": {
+      "title": "Primary Category",
+      "type": "string",
+      "description": "The primary data category, providing the main classification for the value."
+    },
+    "category2": {
+      "title": "Secondary Category",
+      "type": "string",
+      "description": "A secondary data category for more detailed classification."
+    },
+    "value": {
+      "title": "Value",
+      "type": "number",
+      "description": "The numerical statistical value."
+    },
+    "unit": {
+      "title": "Unit",
+      "type": "string",
+      "description": "The unit of measurement for the value (e.g., \"人\" for 'people', \"円\" for 'yen')."
+    },
+    "sourceTableId": {
+      "title": "Source Table ID",
+      "type": "string",
+      "description": "The unique identifier for the source table in the e-Stat database, useful for cross-referencing."
+    },
+    "dataType": {
+      "title": "Data Type",
+      "type": "string",
+      "description": "An inferred data type (e.g., 'population', 'economic') to help with filtering and analysis."
+    },
+    "lastUpdated": {
+      "title": "Last Updated",
+      "type": "string",
+      "description": "The date the source data was last updated by the provider, in ISO 8601 format."
+    },
+    "metadata": {
+      "title": "Metadata",
+      "type": "object",
+      "description": "A comprehensive object containing detailed metadata about the data's source and structure (if requested)."
+    },
+    "extractedAt": {
+      "title": "Extracted At",
+      "type": "string",
+      "description": "The timestamp when the data was extracted by the Actor, in ISO 8601 format."
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": ["statName", "surveyDate", "region", "value", "unit"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "statName": { "label": "Statistic" },
+          "surveyDate": { "label": "Date" },
+          "region": { "label": "Region" },
+          "value": { "label": "Value", "format": "number" },
+          "unit": { "label": "Unit" }
+        }
+      }
+    }
+  }
+}
