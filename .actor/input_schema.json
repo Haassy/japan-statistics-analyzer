@@ -3,6 +3,14 @@
   "description": "Configure the search criteria to find and extract specific statistical data from the Japanese government's e-Stat portal. Start with a keyword or leave fields blank to explore.",
   "type": "object",
   "schemaVersion": 1,
+  "template": {
+    "searchKeyword": "人口",
+    "surveyYears": "2020",
+    "maxItems": 10,
+    "outputFormat": "structured",
+    "includeMetadata": true,
+    "delayBetweenRequests": 1000
+  },
   "propertyOrder": [
     "searchKeyword",
     "surveyYears",
