@@ -3,6 +3,7 @@
   "description": "A structured dataset containing statistical data points extracted from the e-Stat portal. Each item represents a single statistical measure with its associated categories and values.",
   "type": "object",
   "schemaVersion": 1,
+  "actorOutputSchemaVersion": 1,
   "properties": {
     "statName": {
       "title": "Statistic Name",
