@@ -37,9 +37,9 @@
     },
     "value": {
       "title": "Value",
-      "type": "number",
+      "type": "string",
       "description": "The numerical statistical value.",
-      "template": 125927902
+      "template": "125927902"
     },
     "unit": {
       "title": "Unit",
