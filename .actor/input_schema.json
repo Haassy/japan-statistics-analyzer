@@ -63,12 +63,7 @@
       "type": "boolean",
       "description": "If checked, each data record will include a comprehensive metadata object with details about the data's source and structure.",
       "default": true
-    }
-  },
-  "required": []
-}
-
-,
+    },
     "delayBetweenRequests": {
       "title": "Delay Between Requests (ms)",
       "type": "integer",
@@ -76,3 +71,6 @@
       "default": 1000,
       "minimum": 200
     }
+  },
+  "required": []
+}
