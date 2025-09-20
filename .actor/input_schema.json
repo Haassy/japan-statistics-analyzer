@@ -43,11 +43,6 @@
         "raw",
         "both"
       ],
-      "enumTitles": {
-        "structured": "Structured (Cleaned and Normalized)",
-        "raw": "Raw (Original e-Stat JSON)",
-        "both": "Both Formats"
-      },
       "editor": "select"
     },
     "includeMetadata": {
