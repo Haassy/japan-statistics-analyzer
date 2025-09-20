@@ -67,9 +67,9 @@
     },
     "metadata": {
       "title": "Metadata",
-      "type": "object",
-      "description": "A comprehensive object containing detailed metadata about the data's source and structure (if requested).",
-      "template": {}
+      "type": "string",
+      "description": "A comprehensive JSON string containing detailed metadata about the data's source and structure (if requested).",
+      "template": "{}"
     },
     "extractedAt": {
       "title": "Extracted At",
