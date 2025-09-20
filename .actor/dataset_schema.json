@@ -8,62 +8,74 @@
     "statName": {
       "title": "Statistic Name",
       "type": "string",
-      "description": "The official name of the statistic (e.g., \"国勢調査 人口総数\")."
+      "description": "The official name of the statistic (e.g., \"国勢調査 人口総数\").",
+      "template": "国勢調査 人口総数"
     },
     "surveyDate": {
       "title": "Survey Date",
       "type": "string",
-      "description": "The date or period of the survey (e.g., \"2020年\")."
+      "description": "The date or period of the survey (e.g., \"2020年\").",
+      "template": "2020年"
     },
     "region": {
       "title": "Region",
       "type": "string",
-      "description": "The geographical area the data pertains to (e.g., \"全国\" for 'All Japan')."
+      "description": "The geographical area the data pertains to (e.g., \"全国\" for 'All Japan').",
+      "template": "全国"
     },
     "category1": {
       "title": "Primary Category",
       "type": "string",
-      "description": "The primary data category, providing the main classification for the value."
+      "description": "The primary data category, providing the main classification for the value.",
+      "template": "総数"
     },
     "category2": {
       "title": "Secondary Category",
       "type": "string",
-      "description": "A secondary data category for more detailed classification."
+      "description": "A secondary data category for more detailed classification.",
+      "template": "男女計"
     },
     "value": {
       "title": "Value",
       "type": "number",
-      "description": "The numerical statistical value."
+      "description": "The numerical statistical value.",
+      "template": 125927902
     },
     "unit": {
       "title": "Unit",
       "type": "string",
-      "description": "The unit of measurement for the value (e.g., \"人\" for 'people', \"円\" for 'yen')."
+      "description": "The unit of measurement for the value (e.g., \"人\" for 'people', \"円\" for 'yen').",
+      "template": "人"
     },
     "sourceTableId": {
       "title": "Source Table ID",
       "type": "string",
-      "description": "The unique identifier for the source table in the e-Stat database, useful for cross-referencing."
+      "description": "The unique identifier for the source table in the e-Stat database, useful for cross-referencing.",
+      "template": "0003448237"
     },
     "dataType": {
       "title": "Data Type",
       "type": "string",
-      "description": "An inferred data type (e.g., 'population', 'economic') to help with filtering and analysis."
+      "description": "An inferred data type (e.g., 'population', 'economic') to help with filtering and analysis.",
+      "template": "population"
     },
     "lastUpdated": {
       "title": "Last Updated",
       "type": "string",
-      "description": "The date the source data was last updated by the provider, in ISO 8601 format."
+      "description": "The date the source data was last updated by the provider, in ISO 8601 format.",
+      "template": "2021-06-25T00:00:00Z"
     },
     "metadata": {
       "title": "Metadata",
       "type": "object",
-      "description": "A comprehensive object containing detailed metadata about the data's source and structure (if requested)."
+      "description": "A comprehensive object containing detailed metadata about the data's source and structure (if requested).",
+      "template": {}
     },
     "extractedAt": {
       "title": "Extracted At",
       "type": "string",
-      "description": "The timestamp when the data was extracted by the Actor, in ISO 8601 format."
+      "description": "The timestamp when the data was extracted by the Actor, in ISO 8601 format.",
+      "template": "2025-09-20T12:00:00Z"
     }
   },
   "views": {
