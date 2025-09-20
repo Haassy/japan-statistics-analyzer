@@ -21,7 +21,8 @@
     "ESTAT_APP_ID": {
       "name": "e-Stat API Application ID",
       "description": "Your free Application ID for accessing Japan's e-Stat API. Register at https://www.e-stat.go.jp/api/ to get one.",
-      "isSecret": true
+      "isSecret": true,
+      "type": "string"
     }
   }
 }
